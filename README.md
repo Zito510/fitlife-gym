@@ -16,7 +16,4 @@ Ziel: Neue Mitglieder gewinnen, Kursplan anzeigen und Online-Anmeldungen ermögl
 ---
 
 ## 📂 Projektstruktur
-fitlife-gym/
-├── index.html
-├── style.css
-└── README.md
+ 39d60a5 (README hinzugefügt)
