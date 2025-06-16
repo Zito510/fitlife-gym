@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>FitLife Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Willkommen bei FitLife Gym</h1>
+    <nav>
+      <ul>
+        <li><a href="#kurse">Kursplan</a></li>
+        <li><a href="#trainer">Trainer</a></li>
+        <li><a href="#erfolg">Erfolgsgeschichten</a></li>
+        <li><a href="#preise">Preise</a></li>
+      </ul>
+    </nav>
+  </header>
+<section id="kurse">
+  <h2>Kursplan</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Uhrzeit</th>
+        <th>Montag</th>
+        <th>Dienstag</th>
+        <th>Mittwoch</th>
+        <th>Donnerstag</th>
+        <th>Freitag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08:00</td>
+        <td>Yoga</td>
+        <td>Cardio</td>
+        <td>Spinning</td>
+        <td>Yoga</td>
+        <td>CrossFit</td>
+      </tr>
+      <tr>
+        <td>10:00</td>
+        <td>Boxen</td>
+        <td>Pilates</td>
+        <td>Kraft</td>
+        <td>HIIT</td>
+        <td>Zumba</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section id="trainer">
+  <h2>Unsere Trainer</h2>
+
+  <article>
+    <h3>Lisa Müller – Yoga & Pilates</h3>
+    <p>Erfahrung:</p>
+    <meter min="0" max="10" value="8">8 von 10</meter>
+  </article>
+
+  <article>
+    <h3>Markus Becker – CrossFit & Boxen</h3>
+    <p>Erfahrung:</p>
+    <meter min="0" max="10" value="9">9 von 10</meter>
+  </article>
+
+  <article>
+    <h3>Sabine Klein – Zumba & Tanz</h3>
+    <p>Erfahrung:</p>
+    <meter min="0" max="10" value="7">7 von 10</meter>
+  </article>
+</section>
+<section id="erfolg">
+  <h2>Erfolgsgeschichten</h2>
+
+  <blockquote>
+    „Dank FitLife habe ich 15 kg abgenommen und mein Leben komplett verändert.“
+    <cite>– Julia S.</cite>
+  </blockquote>
+
+  <blockquote>
+    „Die Trainer motivieren mich jeden Tag aufs Neue – ein tolles Team!“
+    <cite>– Mehmet A.</cite>
+  </blockquote>
+
+  <blockquote>
+    „Ich fühle mich fitter, gesünder und selbstbewusster als je zuvor.“
+    <cite>– Anja L.</cite>
+  </blockquote>
+</section>
+<section id="preise">
+  <h2>Mitgliedschafts-Preise</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Monatliche Tarife</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Basis</td>
+        <td>29 €/Monat</td>
+      </tr>
+      <tr>
+        <td>Premium (inkl. Kurse)</td>
+        <td>49 €/Monat</td>
+      </tr>
+      <tr>
+        <td>Studententarif</td>
+        <td>19 €/Monat</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section id="mitgliedschaft">
+  <h2>Jetzt Mitglied werden</h2>
+  
+  <form>
+    <!-- Mitgliedschafts-Typ -->
+    <fieldset>
+      <legend>Mitgliedschaft</legend>
+      <label><input type="radio" name="typ" value="basic"> Basic (29 €)</label><br>
+      <label><input type="radio" name="typ" value="premium"> Premium (49 €)</label><br>
+      <label><input type="radio" name="typ" value="vip"> VIP (79 €)</label><br>
+    </fieldset>
+
+    <!-- Zusatzoptionen -->
+    <fieldset>
+      <legend>Zusatzoptionen</legend>
+      <label><input type="checkbox" name="extras" value="pt"> Personal Training (+20 €)</label><br>
+      <label><input type="checkbox" name="extras" value="getränke"> Getränke-Flat (+5 €)</label><br>
+      <label><input type="checkbox" name="extras" value="handtuch"> Handtuch-Service (+3 €)</label><br>
+    </fieldset>
+
+    <!-- Gesundheitsfragen -->
+    <fieldset>
+      <legend>Gesundheit</legend>
+      <label>Haben Sie gesundheitliche Einschränkungen?</label><br>
+      <textarea rows="4" cols="50"></textarea><br>
+      <label><input type="checkbox" required> Ärztliche Freigabe liegt vor</label>
+    </fieldset>
+
+    <!-- Zahlung -->
+    <fieldset>
+      <legend>Zahlungsweise</legend>
+      <label><input type="radio" name="zahlung" value="monatlich"> Monatlich</label><br>
+      <label><input type="radio" name="zahlung" value="jährlich"> Jährlich (10 % Rabatt)</label><br>
+      <label>IBAN: <input type="text" name="iban"></label><br>
+      <label>Startdatum: <input type="date" name="start"></label>
+    </fieldset>
+
+    <!-- Bonus -->
+    <fieldset>
+      <legend>Extras</legend>
+      <label>Alter: <input type="number" name="alter"></label><br>
+      <label>Lieblingsfarbe für Ausrüstung: <input type="color" name="farbe"></label><br>
+      <label>Fitness-Level: <input type="range" min="1" max="10" value="5"></label>
+    </fieldset>
+
+    <br>
+    <button type="submit">Jetzt anmelden</button>
+  </form>
+</section>
+
+</body>
+</html>
