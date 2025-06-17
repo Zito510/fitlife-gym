@@ -6,19 +6,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Willkommen bei FitLife Gym</h1>
+ <header>
+  
+    <h1 class="headline">Willkommen im FitLife Gym</h1>
     <nav>
-      <ul>
-        <li><a href="#kurse">Kursplan</a></li>
-        <li><a href="#trainer">Trainer</a></li>
-        <li><a href="#erfolg">Erfolgsgeschichten</a></li>
-        <li><a href="#preise">Preise</a></li>
-      </ul>
-    </nav>
+  <ul>
+    <li><a href="#kurse">Kursplan</a></li>
+    <li><a href="#trainer">Trainer</a></li>
+    <li><a href="#erfolg">Erfolgsgeschichten</a></li>
+    <li><a href="#preise" aria-current="page">Preise</a></li> 
+  </ul>
+</nav>
   </header>
 <section id="kurse">
+  <p class="test-box">Ich bin eine Test-Box</p>
   <h2>Kursplan</h2>
   <table>
     <thead>
@@ -115,10 +116,22 @@
     </tbody>
   </table>
 </section>
-<section id="mitgliedschaft">
-  <h2>Jetzt Mitglied werden</h2>
-  
+<section id="mitgliedschaft"></section>
+<h2> Schreib uns bei Fragen</h2>
   <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email">
+
+    <label for="nachricht">Nachricht:</label>
+    <textarea id="nachricht"></textarea>
+
+    <button type="submit">Abschicken</button>
+  </form>
+</section>
+<h2>Jetzt Mitglied werden</h2>
     <!-- Mitgliedschafts-Typ -->
     <fieldset>
       <legend>Mitgliedschaft</legend>
@@ -156,8 +169,26 @@
     <fieldset>
       <legend>Extras</legend>
       <label>Alter: <input type="number" name="alter"></label><br>
-      <label>Lieblingsfarbe für Ausrüstung: <input type="color" name="farbe"></label><br>
-      <label>Fitness-Level: <input type="range" min="1" max="10" value="5"></label>
+      <legend>Lieblingsfarbe für Ausrüstung:</legend>
+
+  <label class="color-option red">
+    <input type="radio" name="farbe" value="rot">
+    Rot
+  </label>
+
+  <label class="color-option black">
+    <input type="radio" name="farbe" value="schwarz">
+    Schwarz
+  </label>
+
+  <label class="color-option green">
+    <input type="radio" name="farbe" value="grün">
+    Grün
+    </label>
+    
+     <label>Fitness-Level:
+  <input type="range" min="1" max="10" value="5" class="fitness-slider">
+</label>
     </fieldset>
 
     <br>
